@@ -11,8 +11,8 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"predeploy": "yarn run build",
-		"deploy": "gh-pages -b master -d build"
+		"deploy": "touch out/.nojekyll && gh-pages -t -d out",
+		"export": "next export"
 	},
 	"homepage": "https://NBBares.github.io/",
 	"dependencies": {
